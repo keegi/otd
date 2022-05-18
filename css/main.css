@@ -55,12 +55,18 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
 }
+.item  .top_logo {
+    font-size: 1.5rem;
+}
 .lc-item {
     display: flex;
     justify-content: space-between;
     width: 50%;
 }
-.lc-item .local-nav-item {
+.mb-item {
+    display: none;
+}
+.item .local-nav-item {
     font-size: 1rem;
     font-weight: 500;
 }
@@ -83,7 +89,7 @@ body {
     flex-basis: 50%;
 }
 .scroll-section {
-    border: 1px solid black;
+    border-bottom: 1px solid #CCCCCC;
 }
 .sticky-elem {
     display: none;
@@ -111,7 +117,7 @@ body {
     color: #ffffff;
     font-size: 5rem;
     text-align: center;
-    margin: 3vw 0 1vw;
+    padding: 3vw 0 1vw;
     text-shadow: 1px 1px 1px rgb(114, 114, 114);
 }
 #section-0 .txt-wrap {

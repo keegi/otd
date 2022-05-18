@@ -1,7 +1,7 @@
 @media screen and (max-width: 1279px) {
     .main-title {
         font-size: 4rem;
-        margin: 2.5vw 0 1vw;
+        padding: 2.5vw 0 1vw;
         text-shadow: 1px 1px 1px rgb(114, 114, 114);
     }
     #section-0 .txt-wrap .titleTxt {
@@ -23,9 +23,37 @@
     .lc-item {
         display: none;
     }
+    /* mobile item */
+    .mb-item {
+        display: block;
+        text-align: right;
+    }
+    .mb-item .mBtn {
+        width: 30px;
+        height: 26px;
+        cursor: pointer;
+        vertical-align: -4px;
+    }
+    .mobile-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        border-top: 1px solid #CCCCCC;
+        border-bottom: 2px double #208187;
+        background-color: #FFFFFF;
+    }
+    .mobile-mn {
+        height: 50px;
+        line-height: 50px;
+    }
+    .hidden {
+        display: none;
+    }
+    /* mobile item end */
+    
     .main-title {
         font-size: 3rem;
-        margin: 4vw 0 3vw;
+        padding: 4vw 0 3vw;
         text-shadow: 1px 1px 1px rgb(114, 114, 114);
     }
     .inner {
