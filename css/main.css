@@ -1,0 +1,194 @@
+@charset "utf-8"; 
+@import url(reset.css);
+ 
+html {
+    color: #1d1d1f;
+    letter-spacing: -0.05rem;
+    scroll-behavior: smooth; /* 스크롤 부드럽게 이동 */
+}
+body {
+    overflow-x: hidden; /* 가로 스크롤 제거*/
+    height: auto;
+}
+/* header ============================================================= */
+.global-nav {
+    height: 44px;
+    /* background-color: #208187; */
+    background: linear-gradient(45deg, #000000, skyBlue, #208187);
+}
+.global-nav-link {
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 42px;
+}
+.global-logo {
+    float: left;
+}
+.global-member {
+    float: right;
+}
+.global-member .global-nav-item {
+    color: #f5f5f7;
+    padding-left: 3vw;
+    font-size: 0.75rem;
+}
+.local-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    height: 52px;
+    border-bottom: 1px solid #d6d6d6;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+.local-nav-link {
+    display: flex;
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 52px;
+}
+.item {
+    flex-basis: 50%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.lc-item {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.lc-item .local-nav-item {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* section 공통 =========================================================== */
+.inner {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 2.5vw 0;
+}
+.cont_left {
+    flex-basis: 50%;
+    height: 100%;
+    padding-left: 0.8vw;
+}
+.cont_right {
+    flex-basis: 50%;
+}
+.scroll-section {
+    border: 1px solid black;
+}
+.sticky-elem {
+    display: none;
+    width: 100%;
+}
+.sticky-elem h3 {
+    font-size: 3rem;
+    padding: 40px 0 20px;
+}
+.txt-sub {
+    font-size: 1.7rem;
+}
+
+#show-section-0 #section-0 .sticky-elem,
+#show-section-1 #section-1 .sticky-elem,
+#show-section-2 #section-2 .sticky-elem,
+#show-section-3 #section-3 .sticky-elem,
+#show-section-4 #section-4 .sticky-elem {
+    display: block;
+    position: relative;
+}
+
+/* section-0 ============================================================== */
+.main-title {
+    color: #ffffff;
+    font-size: 5rem;
+    text-align: center;
+    margin: 3vw 0 1vw;
+    text-shadow: 1px 1px 1px rgb(114, 114, 114);
+}
+#section-0 .txt-wrap {
+    position: relative;
+    top: 200px;
+}
+#section-0 .txt-wrap .tit {
+    display: block;
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 1.5vw;
+    letter-spacing: -2px;
+}
+#section-0 .txt-wrap .titleTxt {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    color: #fff;
+    font-weight: 700;
+}
+#section-0 .txt-wrap .subTxt {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 1.2vw;
+}
+#section-0 .img-wrap {
+    position: relative;
+    top: 0;
+    right: -250px;
+}
+.main_img {
+    width: 100%;
+}
+#section-0 .download-app {
+    margin-top: 6vw;
+}
+.main-wrap .download-app .google-play {
+    display: inline-block;
+    width: 215px;
+    height: 64px;
+    background: #fff url("../img/googleplay.png") no-repeat center center;
+    border-radius: 16px;
+    font-size: 0;
+}
+#section-0 .download-app .app-store {
+    display: inline-block;
+    width: 215px;
+    height: 64px;
+    background: #fff url("../img/appstore.png") no-repeat center center;
+    border-radius: 16px;
+    font-size: 0;
+    margin-left: 10px;
+}
+
+/* footer ==================================================================== */
+footer {
+    width: 100%;
+    /* background: #cbe3d4; */
+    background: #999;
+    padding: 2vw 0 3.3vw;
+}
+.footer-inner {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+}
+.footer-inner .f-comp {
+    padding-bottom: 1.2vw;
+}
+.footer-inner .f-comp a {
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0 2vw;
+}
+.footer-inner .footer-info span {
+    padding: 0 1.2vw;
+}
