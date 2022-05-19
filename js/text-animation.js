@@ -13,7 +13,7 @@ const fadeMove = function()
         yValue = -200 * opacityValue_out;
         xValue = -200 * opacityValue_out;
 
-        console.log(`opacityValue_out : ${opacityValue_out} , yValue : ${yValue}`);
+        //console.log(`opacityValue_out : ${opacityValue_out} , yValue : ${yValue}`);
         txtWrap.style.opacity = `${opacityValue_out}`;
         imgWrap.style.opacity = `${opacityValue_out}`;
         opacityValue_out = opacityValue_out + 0.01;

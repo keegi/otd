@@ -13,7 +13,7 @@ body {
 .hidden {
     display: none;
 }
-/* header ============================================================= */
+/* header ============================================= */
 .global-nav {
     height: 44px;
     /* background-color: #208187; */
@@ -73,39 +73,36 @@ body {
     font-size: 1rem;
     font-weight: 500;
 }
+.mobile-item {
+    display: none;
+}
 
-/* section 공통 =========================================================== */
+/* section 공통 ========================================= */
 .inner {
     display: flex;
     flex-direction: row;
     position: relative;
     max-width: 1024px;
+    height: 100%;
     margin: 0 auto;
-    padding: 2.5vw 0;
 }
 .cont_left {
     flex-basis: 50%;
     height: 100%;
-    padding-left: 0.8vw;
+    padding: 2.5vw 0.8vw;
 }
 .cont_right {
     flex-basis: 50%;
+    padding: 2.5vw 0.8vw;
 }
 .scroll-section {
-    border-bottom: 1px solid #CCCCCC;
+    position: relative;
+    /* border-bottom: 1px solid #CCCCCC; */
 }
 .sticky-elem {
     display: none;
     width: 100%;
 }
-.sticky-elem h3 {
-    font-size: 3rem;
-    padding: 40px 0 20px;
-}
-.txt-sub {
-    font-size: 1.7rem;
-}
-
 #show-section-0 #section-0 .sticky-elem,
 #show-section-1 #section-1 .sticky-elem,
 #show-section-2 #section-2 .sticky-elem,
@@ -114,14 +111,24 @@ body {
     display: block;
     position: relative;
 }
+.sticky-elem h3 {
+    font-size: 4rem;
+    padding: 100px 0 20px;
+    font-family: 'NanumSquareRound' !important;
+}
+.txt-sub {
+    font-size: 1.7rem;
+}
 
-/* section-0 ============================================================== */
+
+/* section-0 ============================================= */
 .main-title {
     color: #ffffff;
     font-size: 5rem;
     text-align: center;
+    text-shadow: 2px 2px 2px rgba(121, 121, 121, 0.5);
     padding: 3vw 0 1vw;
-    text-shadow: 1px 1px 1px rgb(114, 114, 114);
+    
 }
 #section-0 .txt-wrap {
     position: relative;
@@ -136,9 +143,10 @@ body {
     letter-spacing: -2px;
 }
 #section-0 .txt-wrap .titleTxt {
-    font-size: 3.2rem;
+    font-size: 3rem;
     line-height: 4rem;
     color: #fff;
+    font-family: 'NanumSquareRound' !important;
     font-weight: 700;
 }
 #section-0 .txt-wrap .subTxt {
@@ -176,7 +184,26 @@ body {
     margin-left: 10px;
 }
 
-/* footer ==================================================================== */
+/* section-1 ============================================= */
+.sec-img1 {
+    position: absolute;
+    top: 130px;
+}
+.sec-img1 img {
+    width: 100%;
+}
+.sec1-back {
+    background: url("../img/sec-1.jpg") no-repeat center / cover;
+    /* background: linear-gradient(0deg, #000000, skyBlue, #FFFFFF); */
+}
+
+/* section-3 ============================================= */
+.sec3-back {
+    background: url("../img/sec-3.jpg") no-repeat center / cover;
+    /* background: linear-gradient(0deg, #000000, skyBlue, #FFFFFF); */
+}
+
+/* footer =============================================*/
 footer {
     width: 100%;
     /* background: #cbe3d4; */

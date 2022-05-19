@@ -80,7 +80,7 @@
     {   
         for (let i = 0; i < sectionSet.length; i++)
         {   // 1. 높이를 설정한다. -> 기본 높이의 1배(multiple)
-            sectionSet[i].height = (window.innerHeight * sectionSet[i].multiple) - 96;
+            sectionSet[i].height = (window.innerHeight * sectionSet[i].multiple);
             // 2. document-element의 속성을 바꾼다.
             sectionSet[i].objs.container.style.height = `${sectionSet[i].height}px`;
         }
