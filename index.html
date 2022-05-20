@@ -15,8 +15,12 @@
                 <span class="global-nav-item"><img src="./img/onetoday_top.png" alt="로고"></span>
             </div>            
             <div class="global-member">
-                <a href="#" class="global-nav-item">Login</a>
+                <a href="#" class="global-nav-item" id="login-user">Login</a>
                 <a href="#" class="global-nav-item">Sign up</a>
+            </div>
+            <div class="global-member-user hidden">
+                <span class="global-nav-item" id="id-value"></span>
+                <a href="#" class="global-nav-item" id="id-logout">Logout</a>
             </div>            
         </div>
     </nav>
@@ -82,11 +86,12 @@
                 <div class="sticky-elem">
                     <h3 class="teal">하루 습관</h3>
                     <p class="txt-sub">
-                        하루의 소소한 일<br/>
+                        하루의 소소한 일들<br/>
                         자신과의 약속을<br/>
                         지킬수 있도록 노력해 보세요.<br/><br/><br/>
                         생각이 습관이 되도록<br/>
-                        체크 하고 관리하는 일상 속 작은 목표.
+                        루틴을 체크하고 관리하는 <br/>
+                        일상 속 작은 목표.
                     </p>
                 </div>
             </div>
@@ -102,7 +107,7 @@
                 </div>
             </div>
             <div class="cont_right">
-                <span class="sec-img1"><img src="./img/section1-img.png" alt="이미지"></span>
+                <span class="sec-img1"><img src="./img/section2-img.png" alt="이미지"></span>
             </div>
         </div>
     </section>
@@ -152,9 +157,27 @@
         </div>
     </footer>
 
+    <!-- user login start -->
+    <div id="login-form" class="hidden">
+        <div class="user-modal">
+            <form class="formbox">
+                <input
+                required
+                maxlength="15"
+                type="text"
+                placeholder="What is your name?"
+                class="inp"
+                />
+                <input type="submit" value="GO!!" class="smt" />
+            </form>
+        </div>
+    </div>
+    <!-- user login end -->
+
     <script src="./js/main.js"></script>
     <script src="./js/text-animation.js"></script>
     <script src="./js/main-background.js"></script>
+    <script src="./js/user.js"></script>
     <script src="./js/mobile.js"></script>
 </body>
 </html>

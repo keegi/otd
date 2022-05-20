@@ -5,15 +5,50 @@
 1. index.html
 
     - section-1 ~ 4에 텍스트 수정
-    - 섹션별 이미지 추가
+    - section 별로 해당 이미지 추가
     - section-1, -3 백그라운드 이미지 추가
 
-3. CSS -> 각섹션별 폰트 수정 작업 
+    - 하단에 login-form modal html 추가
 
-    - 각섹션 제목 font color 수정
+2. main.css  
+
+    - 각 section 제목 font color 및 font-family 수정
     <h3>하루 습관</h3> <h3>생각 메모</h3> <h3>하루 운동</h3> <h3>나만의 시간</h3>
+    
     - font-family: 'NanumSquareRound' !important;
+
+    - login-form modal 부분 추가
+      #login-form, .user-modal, .formbox, .inp, .smt
+
+3. reset.css 
+
+    - 각 section 별 메인 색상 등록
+      section-1 : #21a387 
+      section-2 : #906aa5
+      section-3 : #11609c
+      section-4 : #eab728
+
+4. user.js 파일 추가 
+   (userID 입력시 localStorage 등록하는 form 추가)
+
+    - 상단의 login 클릭시 modal 창 띄운다. ( login   sign up )
+
+    - modal 사이즈는 전체 화면으로 하고 modal 창이 뜨면 
+      body에 scroll이 작동하지 않으며, 
+      modal을 닫을때는 입력창 이외의 부분을 클릭시 modal 창이 닫히고 scroll이 다시 활성화된다.
+
+    - 텍스트 입력후 버튼을 누르면 modal 창이 닫히고 다시 scroll이 활성화
+      되고 상단의 login 텍스트 부분이 바뀐다.
+      예) ( 반가워요 Scarlett 님   logout ) 
+
+    - 브라우저를 닫았다 다시 접속 하거나 새로 고침을 하더라도
+      localstorage에 userID 값이 있는지 user.js 에서 다시 확인하여 적용한다.
+      예) ( 반가워요 Scarlett 님   logout )  
+
+    - 상단의 logout를 클릭하면 localStorage의 key 값을 삭제하고
+      ( login   sign up ) 상태로 돌아간다.
  
+    ※ sign up 은 작업 미정.
 =====================================================
 
 2022, 05, 19 
