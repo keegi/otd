@@ -99,3 +99,8 @@ blockquote:before, blockquote:after, q:before, q:after {
 .mustard {
 	color: #eab728 !important;
 }
+
+/* padding */
+.pl70 {
+	padding-left: 70px;
+}

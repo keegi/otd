@@ -1,5 +1,18 @@
 # onetoday
 
+2022, 05, 22 
+
+1. mediaquery.css  
+
+    - section 별 이미지 및 텍스트 사이즈 미디어 쿼리 추가
+    - 로그인 modal 화면 사이즈 별 미디어 쿼리 추가
+      @media screen and (max-width: 1279px)
+      - user modal
+      @media screen and (max-width: 1023px)
+      - user modal
+
+=====================================================
+
 2022, 05, 20 
 
 1. index.html
@@ -49,6 +62,7 @@
       ( login   sign up ) 상태로 돌아간다.
  
     ※ sign up 은 작업 미정.
+
 =====================================================
 
 2022, 05, 19 

@@ -81,9 +81,6 @@ loginUser.addEventListener("click", ()=>{
     }
 });
 
-// logout 클릭시 localStorage에 userID 삭제
-idLogout.addEventListener("click", idDelete);
-
 // user-modal 외 영역 클릭시 창 닫음 ========================
 window.addEventListener("click", (event)=>{
     //
@@ -94,4 +91,5 @@ window.addEventListener("click", (event)=>{
     }    
 });
 
-
+// logout 클릭시 localStorage에 userID 삭제
+idLogout.addEventListener("click", idDelete);
