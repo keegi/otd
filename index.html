@@ -103,11 +103,21 @@
             <div class="cont_left">
                 <div class="sticky-elem">
                     <h3 class="cattleya">생각 메모</h3>
-                    <p class="txt-sub">매일 새롭게 떠오르는 생각<br/> 잊지 말아야 할 것들을 입력하면 입력한 시간과 함께 저장된다.</p>
+                    <p class="txt-sub">매일 새롭게 떠오르는 생각<br/> 잊지 말아야 할 것들을 입력하면<br/>입력한 시간과 함께 저장된다.</p>
                 </div>
             </div>
             <div class="cont_right">
-                <span><img src="./img/section2-img.png" alt="이미지" class="sec-img img-R"></span>
+                <div class="memo-img hidden">
+                    <img src="./img/section2-img.png" alt="이미지" class="sec-img img-R">
+                </div>
+                <div class="memo-box">
+                    <form id="memo-form">
+                        <input type="text" placeholder="자유롭게 생각을 저장하세요." required>
+                    </form>
+                    <ul id="memo-list">
+
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -122,7 +132,6 @@
                     <h3 class="daphne">하루 운동</h3>
                     <p class="txt-sub">하루의 소소한 일<br/>자신과의 약속을 지킬수 있도록 습관이 되도록 체크 하고 관리해준다</p>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -159,6 +168,7 @@
 
     <!-- user login start -->
     <div id="login-form" class="hidden">
+        <div class="black"></div>
         <div class="user-modal">
             <form class="formbox">
                 <input
@@ -178,6 +188,7 @@
     <script src="./js/text-animation.js"></script>
     <script src="./js/main-background.js"></script>
     <script src="./js/user.js"></script>
+    <script src="./js/memo.js"></script>
     <script src="./js/mobile.js"></script>
 </body>
 </html>

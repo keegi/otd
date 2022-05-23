@@ -1,5 +1,30 @@
 # onetoday
 
+2022, 05, 23 
+
+1. index.html  
+
+    - section-2 생각메모 부분에 memo-box 추가.
+    - 메모를 입력할수 있는 input 추가.
+    - 메모 입력시 출력되는 ul 리스트 태그 추가.
+
+2. main.css
+    
+    - memo-box, memo-form 등 메모 처리 부분의 스타일 시트 추가.
+
+3. memo.js 파일 추가
+
+    - section-2에서 input에 메모를 입력하면 화면에 리스트로 출력되고
+      localStorage에 배열 안에 객체 형식으로 저장된다.
+
+    - 삭제버튼을 클릭하면 메모가 삭제 가능하며, localStorage에서도 삭제.
+    - li에 id값을 부여하여 삭제버튼 클릭시 아이디 값을 찾아 li 를 삭제.
+
+※ 추후 로그인을 통해 localStorage에 uaerId가 없으면 이미지를 출력하고  
+  uaerId가 있으면 데이터를 확인해 보여준다.  
+
+=====================================================
+
 2022, 05, 22 
 
 1. mediaquery.css  
@@ -61,7 +86,7 @@
     - 상단의 logout를 클릭하면 localStorage의 key 값을 삭제하고
       ( login   sign up ) 상태로 돌아간다.
  
-    ※ sign up 은 작업 미정.
+※ sign up 은 작업 미정.
 
 =====================================================
 
