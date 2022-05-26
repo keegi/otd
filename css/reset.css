@@ -86,6 +86,10 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content: none; 
 } 
 
+.tc {
+	text-align: center;
+}
+
 /* color */
 .teal {
 	color: #21a387 !important;

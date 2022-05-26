@@ -12,6 +12,9 @@
     .txt-sub {
         font-size: 1.4rem;
     }
+    .inner img {
+        width: 60%;
+    }
     
     /* section-0 start =============================*/
     .main-title {
@@ -34,18 +37,6 @@
     }
     .main_img {
         width: 70%;
-    }
-
-    /* section-1 start =============================*/
-    .img-L {
-        top: 100px;
-        left: 100px;
-    }
-    .img-R {
-        top: 100px;
-    }
-    .inner img {
-        width: 60%;
     }
 
     /* user modal ================================ */
@@ -117,10 +108,11 @@
     }
     .cont_left {
         text-align: center;
-        padding-left: 0;
+        padding: 0;
     }
     .cont_right {
         text-align: center;
+        padding: 0;
     }
 
     /* section-0 start ============================ */

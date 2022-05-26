@@ -7,6 +7,8 @@ const idLogout    = document.querySelector("#id-logout");
 const bodyWrap    = document.querySelector(".main-wrap");
 const gMember     = document.querySelector(".global-member");
 const gMemberUser = document.querySelector(".global-member-user");
+const memoImg     = document.querySelector(".memo-img");
+const memoBox     = document.querySelector(".memo-box");
 
 const HIDDEN_CLASSNAME   = "hidden";
 const OVERFLOW_CLASSNAME = "overflow"
@@ -34,6 +36,8 @@ function greetings(userID) {
     gMember.classList.add(HIDDEN_CLASSNAME);
     gMemberUser.classList.remove(HIDDEN_CLASSNAME);
     bodyWrap.classList.remove(OVERFLOW_CLASSNAME);
+    memoImg.classList.add(HIDDEN_CLASSNAME);
+    memoBox.classList.remove(HIDDEN_CLASSNAME);
 };
 
 //로컬스토리지에 저장된 아이디를 가져온다 
@@ -92,4 +96,9 @@ window.addEventListener("click", (event)=>{
 });
 
 // logout 클릭시 localStorage에 userID 삭제
-idLogout.addEventListener("click", idDelete);
+idLogout.addEventListener("click", ()=>{
+    window.location.reload();
+    idDelete();
+});
+
+

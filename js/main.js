@@ -19,9 +19,7 @@
                 container : document.querySelector('#section-0'),
             },
             // section 에서 사용하는 값들을 저장.
-            values : {
-
-            }
+            values : {}
         },
         // section-1
         {
@@ -31,9 +29,7 @@
             objs : {
                 container : document.querySelector('#section-1'),
             },
-            values : {
-
-            }
+            values : {}
         },
         // section-2
         {
@@ -43,9 +39,7 @@
             objs : {
                 container : document.querySelector('#section-2'),
             },
-            values : {
-
-            }
+            values : {}
         },
         // section-3
         {
@@ -55,9 +49,7 @@
             objs : {
                 container : document.querySelector('#section-3'),
             },
-            values : {
-
-            }
+            values : {}
         },
         // section-4
         {
@@ -67,13 +59,11 @@
             objs : {
                 container : document.querySelector('#section-4'),
             },
-            values : {
-
-            }
+            values : {}
         }
     ];
 
-    // 함수 파트 ==================================================
+    // 함수 파트 =========================================
     
     // sectionSet 배열을 초기화 해주는 함수
     const initSectionSet = function()
@@ -84,15 +74,6 @@
             // 2. document-element의 속성을 바꾼다.
             sectionSet[i].objs.container.style.height = `${sectionSet[i].height}px`;
         }
-    }
-
-    // 최초에 HTML Page를 초기화 하는 함수.
-    const initHTMLPage = function()
-    {
-        // sectionSet을 초기화 한다.
-        initSectionSet();
-        // 기타 전역번수 초기화
-        yOffset = 0;
     }
 
     // 스크롤 값에 따른 섹션 값 구하는 함수
@@ -128,23 +109,32 @@
         return result;
     }
 
+    // 최초에 HTML Page를 초기화 하는 함수.
+    const initHTMLPage = function()
+    {
+        // sectionSet을 초기화 한다.
+        initSectionSet();
+        // 기타 전역번수 초기화
+        yOffset = 0;
+    }
+
     // 스크롤시 수행되는 함수
     const scrollLoop = function()
     {   // currentSection에 따른 CSS값을 설정.
         document.body.setAttribute('id', `show-section-${currentSection}`);
     }
 
-    // 이벤트 핸들러 =============================================
+    // 이벤트 핸들러 =======================================
     window.addEventListener('scroll', ()=>{
-        // 전체 스크롤값(높이).(yOffset)
-        // 현재 섹션.(currentSection = 0 ~ 4)
         yOffset        = window.scrollY;
         currentSection = getCurrentSection();
         scrollLoop();
     })
 
-    // 함수 호출 =================================================    
-    initHTMLPage();
+    // 함수 호출 ===========================================
+    window.addEventListener("load", ()=>{
+        initHTMLPage();
+    })
 
     
 })();

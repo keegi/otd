@@ -1,5 +1,38 @@
 # onetoday
 
+2022, 05, 26 
+
+1. index.html 파일 수정 
+
+    - section 별 이미지 수정
+    - section 별 텍스트 내용 수정
+
+3. main.css 파일 수정
+
+    - 메모 필드에 메모 갯수가 박스를 초과하면 자동으로 
+      스크롤이 생기게 수정
+
+=====================================================
+
+2022, 05, 24 
+
+1. main.css  
+
+    - 스크롤시 해당 section이 되면 텍스트가 Fadein 되고
+      opacity 가 0 ~ 1까지 fadein 시간만큼 변경된다. 
+
+2. user.js 파일 수정
+
+    - logout 버튼 클릭시 페이지 새로고침 하는 코드 추가
+      window.location.reload();
+
+    - section-2 메모 기능 추가
+      로그인이 되면 이미지를 가리고 메모 필드를 표시한다.
+      memoImg.classList.add(HIDDEN_CLASSNAME);
+      memoBox.classList.remove(HIDDEN_CLASSNAME);
+
+=====================================================
+
 2022, 05, 23 
 
 1. index.html  

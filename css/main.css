@@ -113,6 +113,21 @@ body {
 .scroll-section {
     position: relative;
 }
+.serise-message {
+    text-align: center;
+    animation: fadein 1s ease-in-out;
+}
+@keyframes fadein{
+    0% {
+      opacity: 0;
+      transform: translateY(200px);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  
+}
 .sticky-elem {
     display: none;
     width: 100%;
@@ -132,6 +147,10 @@ body {
 }
 .txt-sub {
     font-size: 1.7rem;
+}
+.sec-img {
+    text-align: center;
+    padding-top: 80px;
 }
 
 
@@ -199,21 +218,13 @@ body {
 }
 
 /* section-1 ============================================ */
-.sec-img {
-    position: absolute;
-    top: 130px;
-}
-.sec-img img {
-    width: 100%;
-}
 .sec1-back {
     background: url("../img/sec-1.jpg") no-repeat center / cover;
 }
 
 /* memo box ============================================ */
 .memo-box {
-    display: block;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 #memo-form {
     display: block;
@@ -227,9 +238,13 @@ body {
     padding-top: 10px;
     border-bottom: 3px double #1d1d1f;
 }
+#memo-list {
+    height: 700px;
+    overflow-y: auto;
+}
 #memo-list li {
     position: relative;
-    margin-top: 10px;
+    margin: 5px 0;
     padding: 10px 15px;
     border-radius: 5px;
     border: 1px solid #CCC;
